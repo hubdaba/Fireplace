@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">BleFun</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="button_text">Press me!</string>
-    <string name="click_to_set" />
-    <string name="appkey">AIzaSyAwF99lYCvV430LApyXnhKofKAEpxa7-Wo</string>
-</resources>
