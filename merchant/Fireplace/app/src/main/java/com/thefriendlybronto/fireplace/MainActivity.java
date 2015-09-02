@@ -11,6 +11,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getFragmentManager().beginTransaction()
+                .add(R.id.fragment, new MainActivityFragment())
+                .commit();
     }
 
 
@@ -30,6 +33,16 @@ public class MainActivity extends Activity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            return true;
+        } else if (id == R.id.action_scan) {
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.fragment, new MainActivityFragment())
+                    .commit();
+            return true;
+        } else if (id == R.id.action_merchant) {
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.fragment, new MerchantFragment())
+                    .commit();
             return true;
         }
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Status"
+        android:id="@+id/beaconStatus"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center|bottom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name"
+        android:id="@+id/BeaconName"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/beaconStatus"
+        android:layout_marginStart="27dp"
+        android:layout_gravity="center|bottom" />
+</RelativeLayout>

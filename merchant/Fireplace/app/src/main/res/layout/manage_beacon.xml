@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/manageBeaconRoot">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BeaconName"
+        android:id="@+id/beaconName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/manageBeaconStatus"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/beaconName"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/registerBeacon"
+        android:layout_below="@+id/manageBeaconStatus"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decomission"
+        android:id="@+id/decomissionBeacon"
+        android:layout_below="@+id/registerBeacon"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate"
+        android:id="@+id/activateBeacon"
+        android:layout_below="@+id/decomissionBeacon"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deactivate"
+        android:id="@+id/deactivateBeacon"
+        android:layout_below="@+id/activateBeacon"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
